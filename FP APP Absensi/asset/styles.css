@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+  background-color: #E8E8E8; 
+  width: 1200px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.isi1{
+  background-color: black; 
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  border-radius: 10px;
+}
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.wrapper .menu-btn{
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  background: #272727;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn{
+  left: 195px;
+  top: 3px;
+
+}
+.wrapper .menu-btn i{
+  position: absolute;
+  transform: ;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.wrapper .menu-btn i.fa-times{
+  opacity: 0;
+}
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#sidebar{
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar{
+  left: 0;
+  top:0;
+}
+#sidebar .title{
+  line-height: 56px;
+  padding-left: 70px;
+  background: #424242;
+  font-size: 20px;
+  font-weight: 100;
+  color: #f2f2f2;
+  border-bottom: 1px solid #222;
+}
+#sidebar .list-items{
+  position: relative;
+  background: #404040;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#sidebar .list-items li{
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
+}
+#sidebar .list-items li:first-child{
+  border-top: none;
+}
+#sidebar .list-items li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#sidebar .list-items li a i{
+  margin-right: 20px;
+}
+.header{
+  background-color: #424242;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-top: 10px;
+}
+.header .name{
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+  padding-left: 50px;
+}
+.img{
+  background-image: url("img/logo.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  margin-top: -37px;
+  margin-bottom: 2px;
+}
+.img2{
+  background-image: url("img/logo.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  margin-top: -46px;
+  margin-bottom: 11px;
+  margin-left: 17px;
+}
+.header a{
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+ img{
+  width: 100px;
+  height: 100px;
+  margin-left: 27px;
+  margin-top: 10px;
+  border: 4px solid #575D63;
+  border-radius: 50%;
+}
+.username{
+  margin-top: -20px;
+  margin-left: 27px;
+  color: white;
+}
+.username2{
+  margin-top: -20px;
+  margin-left: 1px;
+  color: white;
+}
+p{
+	text-align: center;
+}
+.add-btn{
+  background: blue;
+  color: #ffff;
+  border: none;
+  text-align: center;
+  width: 90px;
+  height: 25px;
+  padding: 10px 10px 10px 10px;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3S;
+  transition-property: background;
+}
+.formbody{
+  background-color: #E8E8E8; 
+  width: 500px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
